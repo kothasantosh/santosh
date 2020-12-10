@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class PIM {
-	//Webelements for "PIM" Module
+	//Web elements for "PIM" Module
 
 		@FindBy(id="menu_dashboard_index")
 		//@CacheLookup

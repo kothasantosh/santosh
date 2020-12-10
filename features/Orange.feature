@@ -9,7 +9,7 @@ Scenario Outline: Unsuccessful login with invalid credentials
 	Then User should be able to see alert message as Invalid Credentials
 Examples:
 | username | password |
-| rajesh | rajesh |
+| santosh | santosh |
 | ADMIN | admin |
 
 @unsuccesful_login2

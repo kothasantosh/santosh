@@ -192,12 +192,6 @@ public class Steps {
 
 	@Then("^User can view the Configure PIM Module$")
 	public void user_can_view_the_Configure_PIM_Module() throws Throwable {
-		/*String title=driver.findElement(By.xpath("//*[@id=content']/div/div[1]/h1")).getText();
-		if(title.contentEquals("Configure PIM")) System.out.println("Title Matched");
-		else System.out.println("Title NOT Matched");
-		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
-		System.out.println("User can view the Configure PIM Module");
-		//driver.close();*/
 		System.out.println("User can view the Configure PIM Module");
 		driver.close();
 
@@ -206,9 +200,7 @@ public class Steps {
 
 	@When("^User clicks on Custom feilds module in Configuration Module$")
 	public void user_clicks_on_Custom_feilds_module_in_Configuration_Module() throws Throwable {
-		/*WebElement configuration = pimPg.clickconfiguration();
-		Actions act1 = new Actions(driver);
-		act1.moveToElement(configuration).doubleClick().perform();*/
+	
 		opm.clickconfiguration();
 		opm.clickcustom();
 
@@ -245,13 +237,13 @@ public class Steps {
 
 	@Then("^User should be able to add details of new employee$")
 	public void user_should_be_able_to_add_details_of_new_employee() throws Throwable {
-		opm.enterfirstname("rajesh");
-		opm.entermiddlename("kumar");
-		opm.enterlastname("behara");
+		opm.enterfirstname("santosh");
+		opm.entermiddlename("k");
+		opm.enterlastname("kotha");
 		opm.clickCheckBox();
-		opm.enterUserName("rajesh");
-		opm.enterPassWord("rajesh04");
-		opm.enterConfirmPassword("rajesh04");
+		opm.enterUserName("santosh");
+		opm.enterPassWord("9398794944");
+		opm.enterConfirmPassword("9398794944");
 		opm.clickSave();
 		Thread.sleep(1000);
 		driver.close();
@@ -307,8 +299,8 @@ public class Steps {
 
 	@When("^User enters username and password of the employee$")
 	public void user_enters_username_and_password_of_the_employee() throws Throwable {
-		olg.enterUsername("rajesh");
-		olg.enterPassword("rajesh04");
+		olg.enterUsername("santosh");
+		olg.enterPassword("9398794944");
 	   
 	}
 
